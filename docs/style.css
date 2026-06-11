@@ -1,0 +1,170 @@
+/* AI仕事術ラボ — シンプルで読みやすいブログテーマ */
+:root {
+  --bg: #fbfbfd;
+  --text: #1d1d2b;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-soft: #eff4ff;
+  --border: #e5e7eb;
+  --code-bg: #f3f4f6;
+  --max-width: 720px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.9;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 32px 20px 8px;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-desc {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 16px 20px 64px;
+}
+
+.pr-note {
+  font-size: 12px;
+  color: var(--muted);
+  background: var(--accent-soft);
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+article h1 {
+  font-size: 28px;
+  line-height: 1.5;
+  margin: 16px 0 4px;
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0 0 24px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 48px 0 12px;
+  padding: 8px 14px;
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 36px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--border);
+}
+
+a { color: var(--accent); }
+
+img { max-width: 100%; height: auto; border-radius: 8px; }
+
+code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+pre code { background: none; color: inherit; padding: 0; }
+
+blockquote {
+  margin: 16px 0;
+  padding: 8px 20px;
+  border-left: 4px solid var(--border);
+  color: var(--muted);
+  background: #fff;
+}
+
+.table-wrap { overflow-x: auto; margin: 16px 0; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  background: #fff;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th { background: var(--accent-soft); white-space: nowrap; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+
+/* 記事一覧 */
+.post-list h1 { font-size: 22px; }
+.post-list ul { list-style: none; padding: 0; }
+.post-list li {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  transition: box-shadow 0.15s;
+}
+.post-list li:hover { box-shadow: 0 2px 12px rgba(37, 99, 235, 0.12); }
+.post-list a { text-decoration: none; display: block; }
+.post-list-title { font-weight: 700; font-size: 17px; color: var(--text); display: block; }
+.post-list-date { color: var(--muted); font-size: 12px; }
+.post-list-desc { color: var(--muted); font-size: 13px; margin: 6px 0 0; line-height: 1.7; }
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+.site-footer a { color: var(--muted); }
+
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  article h1 { font-size: 23px; }
+  h2 { font-size: 19px; }
+}
