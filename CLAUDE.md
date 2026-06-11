@@ -17,4 +17,4 @@
 
 ## 運用状況メモ(更新していくこと)
 
-- 2026-06-12: システム構築。記事3本。GitHub公開・ASP登録は未実施
+- 2026-06-12: システム構築。記事3本。GitHub(nagata2004-hub/ai-shigoto-lab)へpush済み。公開URL: https://nagata2004-hub.github.io/ai-shigoto-lab/ (Pages設定はユーザーが実施)。ASP登録は未実施
