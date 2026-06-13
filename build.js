@@ -172,7 +172,7 @@ function layout({ title, description, contentHtml, urlPath, isPost, meta }) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${escapeHtml(fullTitle)}</title>
+${config.googleSiteVerification ? `<meta name="google-site-verification" content="${config.googleSiteVerification}">\n` : ""}<title>${escapeHtml(fullTitle)}</title>
 <meta name="description" content="${escapeHtml(description || config.siteDescription)}">
 <link rel="canonical" href="${canonical}">
 <meta property="og:title" content="${escapeHtml(fullTitle)}">
