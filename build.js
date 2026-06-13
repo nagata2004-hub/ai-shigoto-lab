@@ -14,6 +14,25 @@ const ASSETS_DIR = path.join(ROOT, "assets");
 
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, "config.json"), "utf8"));
 
+// 広告スニペット(任意)。{{ad:キー名}} を記事本文に書くと差し込まれる。
+let ads = {};
+const ADS_FILE = path.join(ROOT, "ads.json");
+if (fs.existsSync(ADS_FILE)) {
+  ads = JSON.parse(fs.readFileSync(ADS_FILE, "utf8")).ads || {};
+}
+
+// 本文中の {{ad:キー名}} を広告HTMLに置換する。
+// markdownパーサが <p>{{ad:...}}</p> で囲むケースも吸収する。
+function injectAds(html) {
+  return html.replace(
+    /(?:<p>)?\{\{ad:([\w-]+)\}\}(?:<\/p>)?/g,
+    (match, key) =>
+      ads[key]
+        ? `<div class="ad-banner">${ads[key]}</div>`
+        : `<!-- 広告キー「${key}」が ads.json に見つかりません -->`
+  );
+}
+
 // ---------- ユーティリティ ----------
 
 function escapeHtml(s) {
@@ -223,7 +242,7 @@ function build() {
       const raw = fs.readFileSync(path.join(POSTS_DIR, file), "utf8");
       const { meta, body } = parseFrontMatter(raw);
       const slug = file.replace(/\.md$/, "");
-      const html = markdownToHtml(body);
+      const html = injectAds(markdownToHtml(body));
       const urlPath = `/posts/${slug}.html`;
       posts.push({ slug, meta, urlPath });
       fs.writeFileSync(

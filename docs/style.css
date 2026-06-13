@@ -152,6 +152,13 @@ hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
 .post-list-date { color: var(--muted); font-size: 12px; }
 .post-list-desc { color: var(--muted); font-size: 13px; margin: 6px 0 0; line-height: 1.7; }
 
+/* 広告バナー */
+.ad-banner {
+  margin: 28px 0;
+  text-align: center;
+}
+.ad-banner img { border-radius: 0; vertical-align: middle; }
+
 .site-footer {
   max-width: var(--max-width);
   margin: 0 auto;

@@ -1,0 +1,7 @@
+{
+  "_使い方": "記事(posts/*.md)の本文に {{ad:キー名}} と書くと、そこに下の広告HTMLが差し込まれます。新しい広告コードをもらったら、ここに キー名: \"HTMLコード\" の形で追記してください(\" は \\\" のようにエスケープが必要なので、Claudeに頼むのが安全です)。",
+  "ads": {
+    "moshimo-banner1": "<a href=\"https://af.moshimo.com/af/c/click?a_id=5634020&p_id=888&pc_id=1087&pl_id=64839\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\"><img src=\"https://image.moshimo.com/af-img/0253/000000064839.png\" width=\"320\" height=\"100\" style=\"border:none;\" alt=\"PR\"></a><img src=\"https://i.moshimo.com/af/i/impression?a_id=5634020&p_id=888&pc_id=1087&pl_id=64839\" width=\"1\" height=\"1\" style=\"border:none;\" loading=\"lazy\" alt=\"\">",
+    "moshimo-banner2": "<a href=\"https://af.moshimo.com/af/c/click?a_id=5634019&p_id=914&pc_id=1138&pl_id=94422\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\"><img src=\"https://image.moshimo.com/af-img/0275/000000094422.png\" width=\"728\" height=\"90\" style=\"border:none;\" alt=\"PR\"></a><img src=\"https://i.moshimo.com/af/i/impression?a_id=5634019&p_id=914&pc_id=1138&pl_id=94422\" width=\"1\" height=\"1\" style=\"border:none;\" loading=\"lazy\" alt=\"\">"
+  }
+}
