@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="U9R9rZXpZMOt5y_7I8jmna_0fI8xvp7b4czCzple9q8">
+<title>Excelの関数をAIに作ってもらう方法|「やりたいこと」を伝えるだけで完成 | AI仕事術ラボ</title>
+<meta name="description" content="VLOOKUPもIFも覚えなくてOK。ChatGPTやClaudeにやりたいことを伝えるだけでExcelの関数を作ってもらう手順を、コピペで使える頼み方の例つきで初心者向けに解説します。">
+<link rel="canonical" href="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/excel-kansuu-ai.html">
+<meta property="og:title" content="Excelの関数をAIに作ってもらう方法|「やりたいこと」を伝えるだけで完成 | AI仕事術ラボ">
+<meta property="og:description" content="VLOOKUPもIFも覚えなくてOK。ChatGPTやClaudeにやりたいことを伝えるだけでExcelの関数を作ってもらう手順を、コピペで使える頼み方の例つきで初心者向けに解説します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/excel-kansuu-ai.html">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="site-title" href="../index.html">AI仕事術ラボ</a>
+  <p class="site-desc">ChatGPT・Claude・生成AIを使って仕事と副業を効率化する実践メディア。実際に手を動かして検証した情報だけを届けます。</p>
+</header>
+<main>
+<p class="pr-note">※当サイトはアフィリエイト広告(PR)を利用しています。</p>
+<article><h1>Excelの関数をAIに作ってもらう方法|「やりたいこと」を伝えるだけで完成</h1><p class="post-meta"><time datetime="2026-06-18">2026-06-18</time> ・ 仕事効率化</p><p>「Excelでこういう計算をしたいけど、どの関数を使えばいいか分からない」</p>
+<p>そんな時、もう関数を暗記する必要はありません。<strong>やりたいことを日本語で伝えるだけで、AIが関数を作ってくれます。</strong></p>
+<p>この記事では、ChatGPTやClaudeにExcelの関数を作ってもらう手順を、初心者向けに解説します。</p>
+<h2 id="基本の頼み方">基本の頼み方</h2>
+<p>AIに関数を作ってもらうとき、伝えるべきことはシンプルです。</p>
+<ol><li><strong>どのセルに何が入っているか</strong>(データの配置)</li><li><strong>何をしたいか</strong>(やりたい計算・処理)</li><li><strong>結果をどこに出したいか</strong></li></ol>
+<p>この3つを伝えるだけ。難しい専門用語は不要です。</p>
+<h3 id="コピペで使える頼み方の型">コピペで使える頼み方の型</h3>
+<pre><code>Excelの関数を教えてください。
+・A列に商品名、B列に単価、C列に個数が入っています。
+・D列に「単価×個数」の合計金額を出したいです。
+・D2セルに入れる関数を教えてください。</code></pre>
+<p>これで、AIが <code>=B2*C2</code> のような関数と、その意味を説明してくれます。</p>
+<h2 id="よくある-やりたいこと-別の頼み方">よくある「やりたいこと」別の頼み方</h2>
+<h3 id="条件で表示を変えたい-IF関数">条件で表示を変えたい(IF関数)</h3>
+<pre><code>B列の点数が80以上なら「合格」、それ未満なら「不合格」とC列に表示する関数を教えてください。</code></pre>
+<h3 id="別の表からデータを探して持ってきたい-VLOOKUP-XLOOKUP">別の表からデータを探して持ってきたい(VLOOKUP / XLOOKUP)</h3>
+<pre><code>「商品番号」をもとに、別シートの一覧表から「商品名」を自動で表示したいです。関数を教えてください。シート名やセル範囲も含めて説明してください。</code></pre>
+<h3 id="特定の条件に合うものだけ合計したい-SUMIF">特定の条件に合うものだけ合計したい(SUMIF)</h3>
+<pre><code>A列が「東京」の行だけ、B列の売上を合計する関数を教えてください。</code></pre>
+<h3 id="重複や空白を整理したい">重複や空白を整理したい</h3>
+<pre><code>A列にある重複したデータを除いて、ユニークな一覧を作る方法を教えてください。</code></pre>
+<h2 id="エラーが出た時の頼み方">エラーが出た時の頼み方</h2>
+<p>関数を入れて <code>#N/A</code> や <code>#VALUE!</code> などのエラーが出ても、あわてず<strong>そのままAIに聞けばOK</strong>です。</p>
+<pre><code>この関数を入れたら #N/A というエラーが出ました。原因と直し方を教えてください。
+関数:【ここに貼り付け】</code></pre>
+<p>エラーの種類から原因を推測して、修正方法を教えてくれます。</p>
+<h2 id="精度を上げるコツ">精度を上げるコツ</h2>
+<p>うまくいかない時は、<strong>実際のデータの形をもっと具体的に伝える</strong>のが効果的です。</p>
+<ul><li>「1行目は見出しで、データは2行目から始まります」</li><li>「日付はB列に2026/6/18のような形式で入っています」</li></ul>
+<p>こうした“前提”を渡すほど、AIの答えは正確になります。この考え方は<a href="prompt-kihon-3ten.html">AIプロンプトの基本「役割・条件・形式」の3点セット</a>で詳しく解説しています。思った答えが出ない時は<a href="ai-kaitou-naoshikata.html">AIの回答が的外れな時の直し方5パターン</a>も参考にしてください。</p>
+<h2 id="注意-結果は必ず自分で確認する">注意:結果は必ず自分で確認する</h2>
+<p>AIが作った関数は、<strong>簡単なテストデータで動作を確認</strong>してから本番に使いましょう。特に、</p>
+<ul><li>計算結果が手計算と合っているか</li><li>セルの範囲(A2:A100など)が自分の表と合っているか</li></ul>
+<p>この2点だけは目視で確認する習慣を。また、社外秘の数字をそのまま入力しない点にも注意してください(参考:<a href="ai-nyuryoku-kikenjouhou.html">生成AIに入力してはいけない情報まとめ</a>)。</p>
+<h2 id="まとめ">まとめ</h2>
+<ul><li>Excel関数は暗記不要。「データの配置・やりたいこと・出力先」を伝えればAIが作る</li><li>IF・VLOOKUP・SUMIFなどもやりたいことを日本語で言うだけ</li><li>エラーもそのまま貼って質問すれば直してくれる</li><li>結果は簡単なテストで必ず確認する</li></ul>
+<p>関数を調べて何十分も悩む時代は終わりました。次にExcelで手が止まったら、まずAIに聞いてみてください。</p></article>
+</main>
+<footer class="site-footer">
+  <nav>
+    <a href="../index.html">ホーム</a> ・
+    <a href="../pages/about.html">運営者情報</a> ・
+    <a href="../pages/privacy.html">プライバシーポリシー</a>
+  </nav>
+  <p>© 2026 AI仕事術ラボ</p>
+</footer>
+</body>
+</html>
