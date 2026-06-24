@@ -17,7 +17,7 @@
 - [x] ChatGPTとClaudeはどっちを使うべき?(2026-06-12 公開)
 - [x] ChatGPT有料版は元が取れるか?無料版との差を検証(2026-06-12 公開)
 - [ ] Claude Pro を1ヶ月使ってわかったこと
-- [ ] Gemini と ChatGPT の違い(Google系サービス利用者向け)
+- [x] Gemini と ChatGPT の違い(Google系サービス利用者向け)(2026-06-24 公開)
 - [ ] 無料で使えるAIツールだけで仕事を回せるか検証
 - [ ] AI議事録ツール比較(Notta/tl;dv/標準機能)
 - [ ] AI翻訳はDeepLとChatGPTどっちが正確?
