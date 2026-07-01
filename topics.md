@@ -20,7 +20,7 @@
 - [x] Gemini と ChatGPT の違い(Google系サービス利用者向け)(2026-06-24 公開)
 - [ ] 無料で使えるAIツールだけで仕事を回せるか検証
 - [ ] AI議事録ツール比較(Notta/tl;dv/標準機能)
-- [ ] AI翻訳はDeepLとChatGPTどっちが正確?
+- [x] AI翻訳はDeepLとChatGPTどっちが正確?(2026-07-02 公開)
 - [ ] Canva のAI機能でどこまで資料が作れるか
 - [ ] NotebookLM の使い方と活用例
 - [ ] Perplexity は Google検索の代わりになるか
