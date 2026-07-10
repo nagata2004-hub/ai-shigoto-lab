@@ -319,6 +319,12 @@ function build() {
   // GitHub Pages で Jekyll 処理を無効化
   fs.writeFileSync(path.join(OUT_DIR, ".nojekyll"), "");
 
+  // robots.txt(全面クロール許可+サイトマップの場所を明示)
+  fs.writeFileSync(
+    path.join(OUT_DIR, "robots.txt"),
+    `User-agent: *\nAllow: /\nSitemap: ${config.siteUrl}/sitemap.xml\n`
+  );
+
   console.log(`ビルド完了: 記事 ${posts.length} 本 → docs/`);
 }
 

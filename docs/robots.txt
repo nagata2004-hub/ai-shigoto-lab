@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nagata2004-hub.github.io/ai-shigoto-lab/sitemap.xml
