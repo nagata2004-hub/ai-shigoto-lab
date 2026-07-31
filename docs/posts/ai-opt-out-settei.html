@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="U9R9rZXpZMOt5y_7I8jmna_0fI8xvp7b4czCzple9q8">
+<title>AIに入力したデータは学習に使われる?オプトアウト設定の確認方法 | AI仕事術ラボ</title>
+<meta name="description" content="ChatGPTやClaudeに入力した内容、AIの学習に使われているか気になったことはありませんか?「学習に使わせない」設定(オプトアウト)の考え方と、確認の実践手順をまとめました。">
+<link rel="canonical" href="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/ai-opt-out-settei.html">
+<meta property="og:title" content="AIに入力したデータは学習に使われる?オプトアウト設定の確認方法 | AI仕事術ラボ">
+<meta property="og:description" content="ChatGPTやClaudeに入力した内容、AIの学習に使われているか気になったことはありませんか?「学習に使わせない」設定(オプトアウト)の考え方と、確認の実践手順をまとめました。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/ai-opt-out-settei.html">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="site-title" href="../index.html">AI仕事術ラボ</a>
+  <p class="site-desc">ChatGPT・Claude・生成AIを使って仕事と副業を効率化する実践メディア。実際に手を動かして検証した情報だけを届けます。</p>
+</header>
+<main>
+<p class="pr-note">※当サイトはアフィリエイト広告(PR)を利用しています。</p>
+<article><h1>AIに入力したデータは学習に使われる?オプトアウト設定の確認方法</h1><p class="post-meta"><time datetime="2026-07-31">2026-07-31</time> ・ AI基礎知識</p><p>「入力した内容、AIの学習に使われてるの?」——<a href="ai-nyuryoku-kikenjouhou.html">生成AIに入力してはいけない情報まとめ</a>でも軽く触れましたが、この記事では<strong>「学習に使わせない」設定(オプトアウト)</strong>について、もう少し踏み込んで整理します。</p>
+<h2 id="なぜ-学習に使われるかどうか-が重要なのか">なぜ「学習に使われるかどうか」が重要なのか</h2>
+<p>多くの生成AIサービスでは、無料プラン・個人向けプランを中心に、<strong>入力内容がサービス改善(モデルの学習)に使われることがある</strong>と規約に明記されています。これは「入力したデータが、将来別のユーザーへの回答に(形を変えて)影響しうる」ということでもあります。</p>
+<p>機密情報を入力しないのが大前提ですが、<strong>「学習に使わせない」設定をオンにしておく</strong>ことで、リスクをさらに一段階下げられます。</p>
+<h2 id="オプトアウト設定の一般的な考え方">オプトアウト設定の一般的な考え方</h2>
+<p>サービスによって呼び方や場所は異なりますが、大まかに次の2パターンがあります。</p>
+<div class="table-wrap"><table><thead><tr><th>パターン</th><th>特徴</th></tr></thead><tbody><tr><td>個人向け無料・有料プランの「設定」からオンオフできるもの</td><td>アカウント設定の中に「データの利用」「チャット履歴とトレーニング」のような項目がある</td></tr><tr><td>法人向け・API利用プランで、契約上あらかじめ学習に使わない扱いになっているもの</td><td>個別に設定する必要がなく、契約自体が「学習に使わない」前提のことが多い</td></tr></tbody></table></div>
+<p><strong>具体的な設定画面の名称・場所は各社の更新で頻繁に変わる</strong>ため、この記事では場所を断定せず、確認の手順だけ示します。</p>
+<h2 id="実践-確認の3ステップ">実践:確認の3ステップ</h2>
+<ol><li>使っているAIサービスの<strong>公式ヘルプセンター</strong>で「データ プライバシー」「トレーニング」「オプトアウト」などのキーワードで検索する</li><li>アプリ・Webの<strong>アカウント設定 → プライバシー関連の項目</strong>を一通り確認する</li><li>不明な場合は、<strong>サービスのサポート窓口に直接問い合わせる</strong>(法人利用なら特に確認しておく価値があります)</li></ol>
+<p>会社で契約している場合は、個人の設定より先に<strong>会社としてどのプランを契約しているか</strong>を確認するのが優先です。詳しくは<a href="kaisha-ai-security.html">会社でAIを使う時のセキュリティ常識</a>も参考にしてください。</p>
+<h2 id="オプトアウトしても油断しないための3点">オプトアウトしても油断しないための3点</h2>
+<h3 id="①-設定が-今の会話-に反映されるタイミングはサービスによる">① 設定が「今の会話」に反映されるタイミングはサービスによる</h3>
+<p>過去の会話に遡って適用されるか、設定変更後の会話からのみ適用されるかはサービスによって異なります。<strong>設定は使い始める前に確認する</strong>のが安全です。</p>
+<h3 id="②-学習に使われなくても-データ自体はサーバーに残ることがある">② 学習に使われなくても、データ自体はサーバーに残ることがある</h3>
+<p>「学習に使わない」と「サーバーに一切保存しない」は別の話です。会話ログがどのくらいの期間残るか、削除するとどうなるかは、各サービスのプライバシーポリシーで個別に確認する必要があります。</p>
+<h3 id="③-それでも機密情報は入力しない">③ それでも機密情報は入力しない</h3>
+<p>オプトアウト設定は「保険」であって、<strong>「機密情報を入力しない」という基本原則を代替するものではありません</strong>。ぼかして入力する習慣は引き続き必要です。</p>
+<h2 id="まとめ">まとめ</h2>
+<ul><li>多くのAIサービスは、入力内容が学習に使われることがある(プラン次第)</li><li>「学習に使わない」設定は、公式ヘルプセンターとアカウント設定から確認できる</li><li>会社利用なら、まず契約プランの扱いを確認するのが先</li><li>オプトアウト設定があっても、機密情報を入力しない基本原則は変わらない</li></ul>
+<p>まずは今使っているAIサービスのヘルプセンターで、「データ」「プライバシー」を検索することから始めてみてください。5分もかかりません。</p></article>
+</main>
+<footer class="site-footer">
+  <nav>
+    <a href="../index.html">ホーム</a> ・
+    <a href="../pages/about.html">運営者情報</a> ・
+    <a href="../pages/privacy.html">プライバシーポリシー</a>
+  </nav>
+  <p>© 2026 AI仕事術ラボ</p>
+</footer>
+</body>
+</html>
