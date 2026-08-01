@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="U9R9rZXpZMOt5y_7I8jmna_0fI8xvp7b4czCzple9q8">
+<title>AIに1日のスケジュール管理を丸ごと任せてみた | AI仕事術ラボ</title>
+<meta name="description" content="朝のタスク出しから夜の振り返りまで、1日のスケジュール管理をAIに丸ごと任せてみました。実際にやってわかった便利さと、AIだけでは回らなかった部分を正直にまとめます。">
+<link rel="canonical" href="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/schedule-kanri-ai.html">
+<meta property="og:title" content="AIに1日のスケジュール管理を丸ごと任せてみた | AI仕事術ラボ">
+<meta property="og:description" content="朝のタスク出しから夜の振り返りまで、1日のスケジュール管理をAIに丸ごと任せてみました。実際にやってわかった便利さと、AIだけでは回らなかった部分を正直にまとめます。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/schedule-kanri-ai.html">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="site-title" href="../index.html">AI仕事術ラボ</a>
+  <p class="site-desc">ChatGPT・Claude・生成AIを使って仕事と副業を効率化する実践メディア。実際に手を動かして検証した情報だけを届けます。</p>
+</header>
+<main>
+<p class="pr-note">※当サイトはアフィリエイト広告(PR)を利用しています。</p>
+<article><h1>AIに1日のスケジュール管理を丸ごと任せてみた</h1><p class="post-meta"><time datetime="2026-08-02">2026-08-02</time> ・ 検証</p><p>「今日1日の予定、全部AIに管理してもらったらどうなるか」を実際に試してみました。タスクの洗い出しから時間配分、夜の振り返りまで、丸1日分の流れを検証します。</p>
+<h2 id="やったこと">やったこと</h2>
+<ol><li>朝、その日のタスクと予定をすべてAIに伝える</li><li>時間配分を提案してもらい、それに沿って過ごす</li><li>予定通りいかなかった時、その場で調整してもらう</li><li>夜に振り返りをしてもらう</li></ol>
+<p><a href="zaitaku-shuuchuuryoku-ai.html">在宅ワークの集中力をAIで管理する方法</a>で紹介した25分単位のプロンプトを、1日全体に拡張した検証です。</p>
+<h2 id="朝-1日のスケジュールを組んでもらう">朝:1日のスケジュールを組んでもらう</h2>
+<pre><code>今日のタスクと予定は以下です。
+・9時から会議(1時間)
+・資料作成(締め切り17時、目安2時間)
+・メール返信(随時)
+・15時に歯医者の予約
+
+このタスクを踏まえて、1日のスケジュール案を作ってください。
+集中力が必要な作業は午前中に、隙間時間にできる作業は後回しにしてください。</code></pre>
+<p>出てきた案は「会議前の30分で資料作成に着手」「歯医者の前後は軽いタスクに」など、<strong>時間の隙間を意識した組み方</strong>になっていて、自分だけで組むより早く形になりました。</p>
+<h2 id="日中-予定が崩れた時の立て直し">日中:予定が崩れた時の立て直し</h2>
+<p>会議が予定より30分伸びた、という想定で相談してみました。</p>
+<pre><code>会議が30分伸びました。今日の残りのスケジュールを組み直してください。
+資料作成の締め切りは動かせません。</code></pre>
+<p><strong>「動かせないもの」を軸に、それ以外を機械的に組み替えてくれる</strong>のは便利でした。人間だと「何を削るか」で悩む時間そのものが無駄になりがちですが、AIはそこを一瞬で提案してくれます。</p>
+<h2 id="夜-振り返りをしてもらう">夜:振り返りをしてもらう</h2>
+<pre><code>今日やったこと・やれなかったことを伝えます。
+明日のスケジュールの組み方に活かせる点を1つだけ教えてください。
+
+やったこと:
+やれなかったこと:</code></pre>
+<p>「1つだけ」と絞ることで、反省が長くならず実行に移しやすいのは<a href="yaruki-denai-hi-ai.html">AIに「やる気が出ない日の過ごし方」を聞いたら</a>でも感じたポイントと同じでした。</p>
+<h2 id="良かった点">良かった点</h2>
+<ul><li><strong>タスクの優先順位づけと時間配分の初動が速い</strong>:ゼロから自分で考えるより、たたき台を見て調整する方が早い</li><li><strong>予定が崩れた時の組み直しが機械的で早い</strong>:感情を挟まず、条件(締め切り・固定予定)だけで再構成してくれる</li><li><strong>振り返りが1日の締めくくりとして機能する</strong>:漠然とした反省より、次に活かせる形に整理してくれる</li></ul>
+<h2 id="AIだけでは回らなかった点">AIだけでは回らなかった点</h2>
+<ul><li><strong>実際にタスクを実行するのは自分</strong>:スケジュールが完璧でも、実行の意思は別問題</li><li><strong>急な割り込み(電話・呼び出しなど)への即応はできない</strong>:自分でその都度AIに再入力する手間が発生する</li><li><strong>体調・気分の波までは反映されない</strong>:「今日はしんどい」という前提を毎回自分で伝えないと考慮されない</li></ul>
+<h2 id="まとめ">まとめ</h2>
+<ul><li>AIは「タスクの優先順位づけ」「予定変更時の組み直し」「振り返りの整理」が得意</li><li>実行そのもの、急な割り込み対応、体調管理は結局自分の役割</li><li>「条件を伝えて組んでもらう→実行→崩れたら伝えて組み直す」のサイクルが実用的</li></ul>
+<p>明日の朝、いつもの手帳やアプリを開く前に、まず今日のタスクをAIに伝えてスケジュール案を作らせてみてください。組み立てる時間そのものが短縮されます。</p></article>
+</main>
+<footer class="site-footer">
+  <nav>
+    <a href="../index.html">ホーム</a> ・
+    <a href="../pages/about.html">運営者情報</a> ・
+    <a href="../pages/privacy.html">プライバシーポリシー</a>
+  </nav>
+  <p>© 2026 AI仕事術ラボ</p>
+</footer>
+</body>
+</html>
