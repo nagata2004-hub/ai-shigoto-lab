@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="U9R9rZXpZMOt5y_7I8jmna_0fI8xvp7b4czCzple9q8">
+<title>Kindle出版をAIと一緒にやってみた vol.2|本文執筆編 | AI仕事術ラボ</title>
+<meta name="description" content="Kindle出版の企画・構成が固まった後、実際にAIと一緒に本文の執筆に着手しました。ブログ記事とは違う「本1冊」ならではの難しさと、対処法を正直に記録します。">
+<link rel="canonical" href="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/kindle-shuppan-ai-vol2.html">
+<meta property="og:title" content="Kindle出版をAIと一緒にやってみた vol.2|本文執筆編 | AI仕事術ラボ">
+<meta property="og:description" content="Kindle出版の企画・構成が固まった後、実際にAIと一緒に本文の執筆に着手しました。ブログ記事とは違う「本1冊」ならではの難しさと、対処法を正直に記録します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/kindle-shuppan-ai-vol2.html">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="site-title" href="../index.html">AI仕事術ラボ</a>
+  <p class="site-desc">ChatGPT・Claude・生成AIを使って仕事と副業を効率化する実践メディア。実際に手を動かして検証した情報だけを届けます。</p>
+</header>
+<main>
+<p class="pr-note">※当サイトはアフィリエイト広告(PR)を利用しています。</p>
+<article><h1>Kindle出版をAIと一緒にやってみた vol.2|本文執筆編</h1><p class="post-meta"><time datetime="2026-08-16">2026-08-16</time> ・ AI副業</p><p><a href="kindle-shuppan-ai-vol1.html">Kindle出版をAIと一緒にやってみた vol.1</a>で、テーマ・読者像・章立ての構成が固まりました。今回は実際に<strong>本文の執筆</strong>に着手した記録です。</p>
+<blockquote><p>※このシリーズは進行状況をそのまま記録しています。今回は最初の数章を書き進めた段階で、まだ出版・完成はしていません。</p></blockquote>
+<h2 id="ブログ記事との一番の違い-前の章を覚えていてもらう-必要がある">ブログ記事との一番の違い:「前の章を覚えていてもらう」必要がある</h2>
+<p>ブログ記事は1本ずつ独立して完結しますが、本は<strong>前の章で説明した内容を、後の章でも踏まえて書く</strong>必要があります。最初にこの違いでつまずきました。</p>
+<p>対策として、各章を書かせる時に<strong>前の章までの要約をプロンプトに含める</strong>やり方に切り替えました。</p>
+<pre><code>以下は本のこれまでの章の要約です。この続きとして、第3章を執筆してください。
+
+【これまでの要約】
+第1章:(要約)
+第2章:(要約)
+
+【第3章で書くこと】
+・(章の目的)
+・(含めるべき要素)
+
+前の章で使った言い回しや説明済みの前提を、そのまま繰り返さないようにしてください。</code></pre>
+<p>これで<strong>話の重複や矛盾がかなり減った</strong>のが実感できました。</p>
+<h2 id="執筆で使ったプロンプトの型">執筆で使ったプロンプトの型</h2>
+<p>基本の流れは、ブログ記事の執筆と同じ「役割・条件・形式」の考え方を踏襲しています。詳しくは<a href="prompt-kihon-3ten.html">プロンプトの基本「役割・条件・形式」の3点セット</a>を参照してください。</p>
+<pre><code>【役割】読者に寄り添いながら実務のノウハウを伝える書き手として
+【条件】vol.1で決めた読者像(◯◯)に向けて、専門用語は避け、具体例を交える
+【形式】見出し2〜3個、各見出しの下に本文、章末にその章のまとめ
+
+第◯章の本文を書いてください。</code></pre>
+<h2 id="本文執筆で気をつけたこと">本文執筆で気をつけたこと</h2>
+<h3 id="①-AIの下書きをそのまま使わない">① AIの下書きをそのまま使わない</h3>
+<p><a href="ai-webwriter-fukugyou.html">AIを使ったWebライター副業の始め方</a>で紹介した「AI下書き+人間編集」のスタイルは、本1冊の規模でも同じでした。むしろ<strong>本は読了までの時間が長い分、違和感のある文章が目立ちやすい</strong>ため、編集の手間はブログ記事より増えました。</p>
+<h3 id="②-自分の言葉-体験-を各章に必ず1つ入れる">② 「自分の言葉・体験」を各章に必ず1つ入れる</h3>
+<p>AIの下書きだけだと、どの章も似たような論調になりがちでした。<strong>実際に自分が経験した具体例やエピソードを1つ足す</strong>だけで、章ごとの個性が出ることが分かりました。</p>
+<h3 id="③-章と章のつながりは-最後にまとめて見直す">③ 章と章のつながりは、最後にまとめて見直す</h3>
+<p>1章ずつ書いていると、全体を通して読んだ時の流れの悪さに気づきにくいです。<strong>数章書いたらまとめて通し読みし、つながりが悪い部分をAIに整えてもらう</strong>工程を挟むようにしました。</p>
+<h2 id="ここまでで分かったこと">ここまでで分かったこと</h2>
+<ul><li>ブログ記事の執筆スキルは活きるが、<strong>「前の章を踏まえる」設計が本特有の難しさ</strong></li><li>章ごとの個性は、AIの下書きに<strong>自分の体験を足す</strong>ことで出せる</li><li>全体の一貫性チェックは、書きながらではなく<strong>まとめて後から</strong>行う方が効率的</li></ul>
+<h2 id="次回予告">次回予告</h2>
+<p>次回vol.3では、章を書き終えた後の<strong>全体の推敲・表紙や紹介文づくり</strong>、そして実際の出版申請に向けた準備について報告する予定です。</p>
+<h2 id="まとめ">まとめ</h2>
+<ul><li>本の執筆は「前の章を踏まえる」という、ブログにはない設計が必要</li><li>AI下書き+自分の体験の追加+編集、という分担は本でも有効</li><li>全体の一貫性は、書きながらではなくまとめてチェックする方が効率的</li></ul>
+<p>複数の記事・章をまたぐ長い文章を書く機会がある人は、<strong>「前の内容の要約をプロンプトに含める」</strong>というやり方、ぜひ試してみてください。</p></article>
+</main>
+<footer class="site-footer">
+  <nav>
+    <a href="../index.html">ホーム</a> ・
+    <a href="../pages/about.html">運営者情報</a> ・
+    <a href="../pages/privacy.html">プライバシーポリシー</a>
+  </nav>
+  <p>© 2026 AI仕事術ラボ</p>
+</footer>
+</body>
+</html>
