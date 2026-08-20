@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="U9R9rZXpZMOt5y_7I8jmna_0fI8xvp7b4czCzple9q8">
+<title>ChatGPTの「GPTs」機能で自分専用AIを作ってみた | AI仕事術ラボ</title>
+<meta name="description" content="特定の作業専用にカスタマイズしたAI「GPTs」、実際にブログ執筆チェック用に自作してみました。カスタム指示との違いと、作ってみて分かった使い勝手を正直にまとめます。">
+<link rel="canonical" href="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/chatgpt-gpts-jisaku.html">
+<meta property="og:title" content="ChatGPTの「GPTs」機能で自分専用AIを作ってみた | AI仕事術ラボ">
+<meta property="og:description" content="特定の作業専用にカスタマイズしたAI「GPTs」、実際にブログ執筆チェック用に自作してみました。カスタム指示との違いと、作ってみて分かった使い勝手を正直にまとめます。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://nagata2004-hub.github.io/ai-shigoto-lab/posts/chatgpt-gpts-jisaku.html">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="site-title" href="../index.html">AI仕事術ラボ</a>
+  <p class="site-desc">ChatGPT・Claude・生成AIを使って仕事と副業を効率化する実践メディア。実際に手を動かして検証した情報だけを届けます。</p>
+</header>
+<main>
+<p class="pr-note">※当サイトはアフィリエイト広告(PR)を利用しています。</p>
+<article><h1>ChatGPTの「GPTs」機能で自分専用AIを作ってみた</h1><p class="post-meta"><time datetime="2026-08-16">2026-08-16</time> ・ 仕事効率化</p><p>「毎回同じチェック作業をAIに頼むなら、専用のAIを作ってしまえばいいのでは?」と思い、ChatGPTの「GPTs」機能で自分専用AIを作ってみました。</p>
+<h2 id="GPTsとカスタム指示は何が違うのか">GPTsとカスタム指示は何が違うのか</h2>
+<p><a href="chatgpt-custom-instructions.html">ChatGPTのカスタム指示おすすめ設定例</a>で紹介した<strong>カスタム指示</strong>は、自分のアカウント全体に効く「好みの設定」でした。</p>
+<p>一方<strong>GPTs</strong>は、<strong>特定の用途に特化した「専用AI」を1つの独立したツールとして作れる</strong>機能です。</p>
+<div class="table-wrap"><table><thead><tr><th></th><th>カスタム指示</th><th>GPTs</th></tr></thead><tbody><tr><td>単位</td><td>アカウント全体</td><td>用途ごとに複数作れる</td></tr><tr><td>内容</td><td>好み・プロフィールの設定</td><td>指示+参考資料+特定の役割を1つにまとめる</td></tr><tr><td>使い方</td><td>普段のチャットにそのまま反映</td><td>専用の入り口から呼び出して使う</td></tr></tbody></table></div>
+<p>具体的な作成手順・呼び方は更新が多いため、最新の場所は<a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT公式</a>のヘルプで確認してください。</p>
+<h2 id="実際に作ってみたもの-ブログ記事チェック専用AI">実際に作ってみたもの:「ブログ記事チェック専用AI」</h2>
+<p>このサイトの執筆ルール(誇張しない、体験ベースで書く、断定を避けるなど)を毎回説明するのが面倒だったので、<strong>チェック専用のGPTs</strong>を作ってみました。</p>
+<h3 id="設定した内容-イメージ">設定した内容(イメージ)</h3>
+<pre><code>【役割】
+このブログの編集担当として、書かれた記事案をチェックする
+
+【チェック項目】
+・誇張表現、断定しすぎた言い回しがないか
+・「使ってみた」と書きつつ実際には体験していない可能性がある記述がないか
+・古くなりやすい固有情報(価格・仕様)を断定していないか
+・読者(AIに詳しくない社会人)にとって分かりにくい専門用語がないか
+
+【出力形式】
+指摘事項を箇条書きで、該当箇所を引用しながら挙げる</code></pre>
+<h2 id="使ってみて良かった点">使ってみて良かった点</h2>
+<h3 id="①-毎回の前置きが不要になった">① 毎回の前置きが不要になった</h3>
+<p>「このブログのルールに沿ってチェックして」と説明し直す手間がなくなり、<strong>記事案を貼るだけでチェックが始まる</strong>ようになりました。</p>
+<h3 id="②-チェックの-観点-がぶれなくなった">② チェックの「観点」がぶれなくなった</h3>
+<p>毎回口頭で頼むと、その日の頼み方次第でチェックの厳しさが変わることがありましたが、GPTsに固定しておくことで<strong>毎回同じ基準でチェックされる</strong>安心感がありました。</p>
+<h2 id="使ってみて感じた注意点">使ってみて感じた注意点</h2>
+<h3 id="①-過信すると-作った時の設定-のまま古くなる">① 過信すると「作った時の設定」のまま古くなる</h3>
+<p>執筆ルールを更新した時に、<strong>GPTs側の設定も忘れずに更新する</strong>必要があります。放置すると、古いルールでチェックされ続けることになります。</p>
+<h3 id="②-万能ではない">② 万能ではない</h3>
+<p><a href="ai-agent-kinou-kensho.html">生成AIの「エージェント機能」に日常業務を任せてみた</a>でも触れた通り、<strong>最終的な公開判断は人間が行う</strong>という前提は変わりません。GPTsのチェックも「一次チェック」として使うのが安全です。</p>
+<h3 id="③-機密情報の扱いは通常のチャットと同じ">③ 機密情報の扱いは通常のチャットと同じ</h3>
+<p>GPTsに読み込ませる参考資料に機密情報を含めないよう注意してください(参考:<a href="ai-nyuryoku-kikenjouhou.html">生成AIに入力してはいけない情報まとめ</a>)。</p>
+<h2 id="業務で応用できそうな用途">業務で応用できそうな用途</h2>
+<ul><li>社内文書のフォーマットチェック専用AI</li><li>特定商品のFAQ回答専用AI(想定問答をあらかじめ読み込ませる)</li><li>新人研修のQ&amp;A相手専用AI</li></ul>
+<p><strong>「同じチェック・同じ役割を繰り返し頼んでいる作業」があれば、GPTs化する価値があります。</strong></p>
+<h2 id="まとめ">まとめ</h2>
+<ul><li>GPTsは「特定用途に特化した専用AI」を作れる機能、カスタム指示とは別物</li><li>繰り返す作業を専用AI化すると、前置きが減り基準もぶれにくくなる</li><li>設定の陳腐化・最終判断は人間、という前提は忘れずに</li></ul>
+<p>毎回同じ説明を繰り返しているAIとのやり取りがあれば、その内容をそのままGPTsの設定欄に貼り付けてみてください。次回からその手間がまるごと消えます。</p></article>
+</main>
+<footer class="site-footer">
+  <nav>
+    <a href="../index.html">ホーム</a> ・
+    <a href="../pages/about.html">運営者情報</a> ・
+    <a href="../pages/privacy.html">プライバシーポリシー</a>
+  </nav>
+  <p>© 2026 AI仕事術ラボ</p>
+</footer>
+</body>
+</html>
