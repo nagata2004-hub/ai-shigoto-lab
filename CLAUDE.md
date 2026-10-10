@@ -20,3 +20,5 @@
 - 2026-06-12: システム構築。記事3本。GitHub(nagata2004-hub/ai-shigoto-lab)へpush済み。公開URL: https://nagata2004-hub.github.io/ai-shigoto-lab/ (Pages設定はユーザーが実施)
 - 2026-06-13: もしもアフィリエイトに登録済み。`ads.json` に広告コード設置、副業関連記事2本([ai-fukugyou-genjitsu](posts/ai-fukugyou-genjitsu.md)・[kaishain-fukugyou-kakunin](posts/kaishain-fukugyou-kakunin.md))に広告設置済み。実際の成果(クリック数・報酬額)はASP管理画面でのみ確認可能で、Claude側からは見えない。同日、Google Search Console確認タグも `config.json` に設置済み(`googleSiteVerification`)だが、ユーザー側でのSearch Console登録・確認が完了しているかは未確認
 - 2026-08-02: 上記の登録状況が古い記事([unei-shuueki-koukai-vol1](posts/unei-shuueki-koukai-vol1.md))に反映されていなかったため修正。今後、収益・ASP状況に言及する記事を書く前は必ず `ads.json` の実際の設置状況を確認すること
+- 2026-09-19: Search Console(ブラウザペイン経由で読み取り)。インデックス登録は1件(トップのみ)、クリック0・表示2、サイトマップ `sitemap.xml` は「取得できませんでした」・検出0。正しいURLで再送信済み
+- 2026-10-10: 記事85本。サイトマップは有効(88URL)、noindex・canonicalの問題なし=技術面の阻害要因は見当たらない。Google検索での登録状況は、自動アクセス確認画面が出て確認できず(回避操作はしない)。Search Consoleの最新数字・ASP成果はユーザー側で未確認。`STRATEGY.md` の「記事50本・半年でPVほぼゼロなら戦略会議」の基準に近いため、記事を増やす前に方針の見直しを提案中
